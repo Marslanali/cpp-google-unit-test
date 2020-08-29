@@ -36,22 +36,22 @@ $ ./UTest
 ```
 
 ```
-[==========] Running 2 tests from 1 test case.
+[==========] Running 4 tests from 1 test case.
 [----------] Global test environment set-up.
-[----------] 2 tests from SquareRootTest
+[----------] 4 tests from SquareRootTest
 [ RUN      ] SquareRootTest.PositiveNos
 [       OK ] SquareRootTest.PositiveNos (0 ms)
 [ RUN      ] SquareRootTest.NegativeNos
 [       OK ] SquareRootTest.NegativeNos (0 ms)
-[----------] 2 tests from SquareRootTest (1 ms total)
+[ RUN      ] SquareRootTest.GreaterNos
+[       OK ] SquareRootTest.GreaterNos (0 ms)
+[ RUN      ] SquareRootTest.LessNos
+[       OK ] SquareRootTest.LessNos (1 ms)
+[----------] 4 tests from SquareRootTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (1 ms total)
-[  PASSED  ] 2 tests.
-
-[----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (0 ms total)
-[  PASSED  ] 2 tests.
+[==========] 4 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 4 tests.
 ```
 
 
@@ -96,22 +96,23 @@ On windows `powershell` type:
 ```
 
 ```
-[==========] Running 2 tests from 1 test case.
+[==========] Running 4 tests from 1 test case.
 [----------] Global test environment set-up.
-[----------] 2 tests from SquareRootTest
+[----------] 4 tests from SquareRootTest
 [ RUN      ] SquareRootTest.PositiveNos
 [       OK ] SquareRootTest.PositiveNos (0 ms)
 [ RUN      ] SquareRootTest.NegativeNos
 [       OK ] SquareRootTest.NegativeNos (0 ms)
-[----------] 2 tests from SquareRootTest (1 ms total)
+[ RUN      ] SquareRootTest.GreaterNos
+[       OK ] SquareRootTest.GreaterNos (0 ms)
+[ RUN      ] SquareRootTest.LessNos
+[       OK ] SquareRootTest.LessNos (1 ms)
+[----------] 4 tests from SquareRootTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (1 ms total)
-[  PASSED  ] 2 tests.
+[==========] 4 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 4 tests.
 
-[----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (0 ms total)
-[  PASSED  ] 2 tests.
 ```
 
 
