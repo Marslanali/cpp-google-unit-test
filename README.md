@@ -1,8 +1,14 @@
 # cpp-google-unit-test
 unit test using Google C++ test framework
 
+## Linux Dependencies
 
-## Dependencies
+- [GTest](https://github.com/google/googletest)
+- GCC
+- CMake
+- GNU Make
+
+### Getting GTest on Ubuntu
 
 ```
 sudo apt-get install libgtest-dev
@@ -12,3 +18,100 @@ sudo cmake CMakeLists.txt
 sudo make
 sudo cp *.a /usr/lib
 ```
+
+### Building GTest on Ubuntu
+
+```
+cd ~\cpp-google-unit-test
+mkdir build
+cd build
+cmake ..
+make
+```
+
+### Running GTest executable
+
+```
+$ ./UTest 
+```
+
+```
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SquareRootTest
+[ RUN      ] SquareRootTest.PositiveNos
+[       OK ] SquareRootTest.PositiveNos (0 ms)
+[ RUN      ] SquareRootTest.NegativeNos
+[       OK ] SquareRootTest.NegativeNos (0 ms)
+[----------] 2 tests from SquareRootTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+```
+
+
+## Window Dependencies
+
+- [GTest](https://github.com/google/googletest)
+- MinGW
+- CMake
+- GNU Make
+
+First get [GTest](https://github.com/google/googletest) in your root folder. 
+
+```
+cd ~\cpp-google-unit-test
+git clone https://github.com/google/googletest.git
+```
+
+Open `cmd` or `power shell` as an administrator.
+
+### Building GTest on windows
+
+On windows `powershell` type: 
+
+```
+cd ~\cpp-google-unit-test
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles"
+make
+```
+
+- The flag `-G "MinGW Makefiles"` is necessary if you are using `power shell` or `cmd` in windows. 
+  Bydefault `make` is set to visual studio platform toolset. 
+
+
+### Running GTest executable
+
+On windows `powershell` type:
+
+```
+& ".\UTest.exe"
+```
+
+```
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SquareRootTest
+[ RUN      ] SquareRootTest.PositiveNos
+[       OK ] SquareRootTest.PositiveNos (0 ms)
+[ RUN      ] SquareRootTest.NegativeNos
+[       OK ] SquareRootTest.NegativeNos (0 ms)
+[----------] 2 tests from SquareRootTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+```
+
+

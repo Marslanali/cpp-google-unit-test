@@ -19,6 +19,17 @@ ASSERT_EQ(-1.0, squareRoot(-15.0));
 ASSERT_EQ(-1.0, squareRoot(-0.2));
 }
 
+TEST(SquareRootTest, GreaterNos)
+{
+ ASSERT_GT(8, squareRoot(36.0));
+}
+
+TEST(SquareRootTest, LessNos)
+{
+ ASSERT_LT(5, squareRoot(36.0));
+}
+
+
 int main(int argc, char **argv)
 {
   testing::InitGoogleTest(&argc, argv);
